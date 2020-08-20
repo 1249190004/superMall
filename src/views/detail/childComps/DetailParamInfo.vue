@@ -7,7 +7,7 @@
       </tr>
     </table>
     <table class="info-param">
-      <tr v-for="(info, index) in paramInfo.infos">
+      <tr v-for="(info, index) in paramInfo.infos" :key="index">
         <td class="info-param-key">{{info.key}}</td>
         <td class="param-value">{{info.value}}</td>
       </tr>
@@ -19,17 +19,17 @@
 </template>
 
 <script>
-	export default {
-		name: "DetailParamInfo",
+  export default {
+    name: "DetailParamInfo",
     props: {
-		  paramInfo: {
-		    type: Object,
+      paramInfo: {
+        type: Object,
         default() {
-		      return {}
+          return {}
         }
       }
     }
-	}
+  }
 </script>
 
 <style scoped>
@@ -49,7 +49,7 @@
   }
 
   .param-info table tr td {
-    border-bottom: 1px solid rgba(100,100,100,.1);
+    border-bottom: 1px solid rgba(100, 100, 100, .1);
   }
 
   .info-param-key {
@@ -58,7 +58,7 @@
   }
 
   .info-param {
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
   }
 
   .param-value {

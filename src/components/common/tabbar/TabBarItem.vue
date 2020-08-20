@@ -49,7 +49,7 @@
     .tab-bar-item {
         flex: 1;
         height: 49px;
-        width: 100px;
+        width: 25%;
         /*line-height: 49px;*/
         text-align: center;
     }
@@ -60,7 +60,4 @@
         vertical-align: middle;
     }
 
-    /*.active {
-        color: red;
-    }*/
 </style>

@@ -21,17 +21,17 @@
 </template>
 
 <script>
-	export default {
-		name: "DetailBaseInfo",
+  export default {
+    name: "DetailBaseInfo",
     props: {
-		  goods: {
-		    type: Object,
+      goods: {
+        type: Object,
         default() {
-		      return {}
+          return {}
         }
       }
     }
-	}
+  }
 </script>
 
 <style scoped>
@@ -79,7 +79,7 @@
     line-height: 30px;
     display: flex;
     font-size: 13px;
-    border-bottom: 1px solid rgba(100,100,100,.1);
+    border-bottom: 1px solid rgba(100, 100, 100, .1);
     justify-content: space-between;
   }
 
